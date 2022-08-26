@@ -9,13 +9,13 @@
 (FILLORCLEAR)
 	@j
 	M = D
-	@0
+	@R0
 	D = D-M
 	@FILL
 	D;JEQ
 	@j
 	D = M
-	@1
+	@R1
 	D = D-M
 	@CLEAR
 	D;JEQ
