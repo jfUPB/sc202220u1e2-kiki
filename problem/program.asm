@@ -7,16 +7,16 @@
 	0;JMP
 
 (FILLORCLEAR)
-	@0
+	@j
 	M = D
-	@R0
-	D = D-A
+	@0
+	D = D-M
 	@FILL
 	D;JEQ
-	@1
+	@j
 	D = M
-	@R1
-	D = D-A
+	@1
+	D = D-M
 	@CLEAR
 	D;JEQ
 	@START
