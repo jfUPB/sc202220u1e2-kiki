@@ -7,15 +7,15 @@
 	0;JMP
 
 (FILLORCLEAR)
-	@j
+	@0
 	M = D
-	@70
+	@R0
 	D = D-A
 	@FILL
 	D;JEQ
-	@j
+	@1
 	D = M
-	@67
+	@R1
 	D = D-A
 	@CLEAR
 	D;JEQ
