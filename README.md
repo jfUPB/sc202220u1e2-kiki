@@ -3,16 +3,21 @@ MEMORY[16] = 16384;
 
 while (true){
     if (kbd !=0){
-        if (key = R0){
+        if (MEMORY[0] ){
 
-         
-
-            
+            MEMORY[0] = MEMORY[0] - 1;
+            MEMORY[MEMORY[0]] = 0x0000;
         }
 
-        else if (key = MEMORY[1]){
+        else if (MEMORY[1]){
+
+            
+            MEMORY[MEMORY[1]] = 0xFFFF;
+            MEMORY[1] = MEMORY[1] + 1;
 
         }
     }
 }
+
+
 
